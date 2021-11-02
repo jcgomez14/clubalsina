@@ -1,0 +1,163 @@
+@media (min-width: 768px) and (max-width: 991px){
+	body{
+		font-size: 18px;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 100;
+		.header{
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			align-items: center;
+				.header__logo--left{
+					width: 100px;
+					margin-top: 30px;
+					margin-left: auto;
+					margin-right: auto;
+				}
+					ul{
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+						justify-content: center;
+						font-size: 18px;
+						margin-top: 20px;
+						margin-left: auto;
+						margin-right: auto;
+						width: 100%;
+						height: 100%;
+					}
+						a{
+							text-decoration: none;
+							color: white;
+							margin-right: 5px;
+							margin-left: 5px;
+						}
+		}
+		.flex__texto{
+			display: flex;
+			background-color: black;
+			color: white;
+				.header__texto{
+					width: 100%;
+					color: white;
+					font-style: italic;
+					font-size: 3rem;
+					margin: 40px;
+				}
+		}
+
+		.main__proyecto--texto{
+			background-color: white;
+			margin-top: 20px;
+			width: 100%;
+		    font-size: 2.5rem;
+			font-weight: 700;
+			text-align: center;
+			color: black;
+		}
+
+		.main__proyecto--flex{
+			display: flex;
+			background-color: white;
+			align-content: center;
+				.main__proyecto--grid{
+					display: grid;
+					grid-template-columns: repeat(2, 1fr);
+					grid-template-rows: repeat(3, 1fr);
+					grid-gap: 50px;
+					margin: 40px; 
+					width: 100%;
+					height: 100%;
+					align-self: stretch;
+					justify-self: center;
+					align-items: center;
+					justify-items: center;
+				 	grid-template-areas: 
+				 	"one two"
+				 	"three four"
+				 	"five six"
+					 	;
+						}
+						.main__proyecto--one{
+							grid-area: one;
+							align-self: stretch;
+							justify-self: center;
+							align-items: center;
+						}
+						.main__proyecto--two{
+							grid-area: two;
+							align-self: stretch;
+							justify-self: center;
+							align-items: center;
+						}
+						.main__proyecto--three{
+							grid-area: three;
+							align-self: stretch;
+							justify-self: center;
+							align-items: center;
+						}
+						.main__proyecto--four{
+							grid-area: four;
+							align-self: stretch;
+							justify-self: center;
+							align-items: center;
+						}
+						.main__proyecto--five{
+							grid-area: five;
+							align-self: stretch;
+							justify-self: center;
+							align-items: center;
+						}
+						.main__proyecto--six{
+							grid-area: six;
+							align-self: stretch;
+							justify-self: center;
+							align-items: center;
+						}
+				}
+		}
+
+		.flex__contacto{
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+			.main__contacto{
+				color: white;
+				font-size: 30px;
+				font-weight: 700;
+				margin-left: 40px;
+				margin-right: 40px;
+			}
+				.main__contacto--texto{
+					font-size: 20px;
+					margin-left: 40px;
+					margin-right: 40px;
+					margin-top: 20px;
+					font-weight: 100;
+				}
+		}
+
+		.main__footer{
+			background-color: black;
+			color: white;
+			display: flex;
+			flex-direction: column;
+				ul{
+					font-style: thin;
+					font-size: 80%;
+					list-style: none;
+					margin-left: 40px;
+					margin-right: 40px;
+					margin-top: 20px;
+					width: 80%;
+					flex-basis: 100%;
+						#titulo__footer{
+							font-weight: 700;
+						}
+							li{
+								padding-top: 10px;
+							}
+				}
+		}
+	
+}

@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap');
+@import "mediamobile";
+@import "mediatableta";
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+}
+
+.header{
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: flex-end;
+	background-color: black;
+	color: white;
+		.header__logo--left{
+					width: 100px;
+					margin-right: auto;
+					margin-top: 30px;
+					margin-left: 30px;
+					}
+			ul{
+				display: flex;
+				color: white;
+				font-size: 1rem;
+				margin-top: 30px;
+				margin-left: 50px;
+				margin-right: 50px;
+				list-style: none;
+				text-transform: uppercase;
+					a{
+						text-decoration: none;
+						color: white;
+						margin-right: 5px;
+						margin-left: 5px;
+							}
+								
+				}
+}
+
+.flex__texto{
+	display: flex;
+	background-color: black;
+	color: white;
+	.header__texto{
+		width: 100%;
+		color: white;
+		font-style: italic;
+		font-size: 3rem;
+		margin: 40px;
+	}
+}
+
+.main__proyecto--texto{
+	background-color: white;
+	margin-top: 20px;
+	width: 100%;
+    font-size: 2.5rem;
+	font-weight: 700;
+	text-align: center;
+	color: black;
+}
+
+.main__proyecto--flex{
+	display: flex;
+	background-color: white;
+	align-content: center;
+		.main__proyecto--grid{
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: repeat(3, 1fr);
+			grid-gap: 50px;
+			margin: 60px; 
+		 	grid-template-areas: 
+		 	"one two"
+		 	"three four"
+		 	"five six"
+		 	;
+		}
+			h5{
+			text-transform: uppercase;
+			font-size: 18px;
+			margin-top: 5px;
+			}
+			div{
+			justify-self: center;
+			justify-content: center;
+			align-self: center;
+			align-items: center;
+			align-content: center;
+			}
+			.main__proyecto--one{
+				grid-area: one;
+			}
+			.main__proyecto--two{
+				grid-area: two;
+			}
+			.main__proyecto--three{
+				grid-area: three;
+			}
+			.main__proyecto--four{
+				grid-area: four;
+			}
+			.main__proyecto--five{
+				grid-area: five;
+			}
+			.main__proyecto--six{
+				grid-area: six;
+			}
+}
+
+.main__proyecto--section{
+	display: flex;
+	flex-direction: column;
+	background-color: black;
+	color: white;
+	padding: 60px;
+	h2{
+		font-weight: 700;
+		font-size: 40px;
+	}
+	h4{
+		margin-top: 10px;
+		font-size: 20px;
+	}
+	.boton{
+			align-content: center;
+			padding-top:15px;
+			padding-bottom:15px;
+			border-color: white;
+			border-width: 1px;
+			border-style: solid;
+			font-size: 14px;
+			text-align: center;
+			color: white;
+			background-color: white;
+			text-decoration: none;
+	}
+	a{
+		margin: 5px;
+		text-decoration: none;
+		color: black;
+	}
+}
+.main__contacto--section{
+	display: flex;
+	flex-direction: column;
+	color: black;
+	padding: 60px;
+		h2{
+			font-weight: 700;
+			font-size: 40px;
+		}
+		h4{
+			margin-top: 10px;
+			font-size: 20px;
+		}
+		.boton__contacto{
+			align-content: center;
+			padding-top:15px;
+			padding-bottom:15px;
+			border-color: black;
+			border-width: 1px;
+			border-style: solid;
+			font-size: 14px;
+			text-align: center;
+			color: white;
+			background-color: black;
+			text-decoration: none;
+		}
+		a{
+			margin: 5px;
+			text-decoration: none;
+			color: white;
+		}
+}
+
+.main__footer{
+	background-color: black;
+	color: white;
+	display: flex;
+	flex-direction: column;
+		ul{
+			font-style: thin;
+			font-size: 80%;
+			list-style: none;
+			margin-left: 40px;
+			margin-right: 40px;
+			margin-top: 20px;
+			width: 80%;
+			flex-basis: 100%;
+				#titulo__footer{
+					font-weight: 700;
+				}
+					li{
+						padding-top: 10px;
+					}
+		}
+}
+
+.main__directores--flex{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+		.main__directos--grid{
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: repeat(1, 1fr);
+			grid-gap: 50px;
+			margin: 40px; 
+			width: 100%;
+			text-align: center;
+			font-weight: 100;
+		 	grid-template-areas: 
+		 	 "one two"
+		}
+				.main__directores--one{
+					grid-area: one;
+					align-self: stretch;
+					justify-self: center;
+					align-items: center;
+					font-size: 100%;
+					text-align: center;
+					font-weight: 100;
+						h4{
+						font-weight: 100;
+						}
+				}
+				.main__directores--two{
+					grid-area: two;
+					align-self: stretch;
+					justify-self: center;
+					align-items: center;
+					font-size: 100%;
+					text-align: center;
+						h4{
+						font-weight: 100;
+						}
+				}
+}
+
+#titulo__directores{
+	font-size: 200%;
+	font-weight: 700;
+	text-align: center;
+}
+
+.main__nosotros--flex{
+	display: flex;
+	color: black;
+}
+.main__nosotros--texto{
+		color: black;
+		font-size: 20px;
+		margin: 40px;
+		font-weight: 100;
+}
+
+.main__estudio--flex{
+	display: flex;
+	background-color: white;
+	align-content: center;
+		.main__estudio--grid{
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: repeat(2, 1fr);
+			grid-gap: 50px;
+			margin: 60px; 
+		 	grid-template-areas: 
+		 	"one two"
+		 	"three four"
+		 	"five six"
+		 	;
+		}
+			h5{
+			text-transform: uppercase;
+			font-size: 18px;
+			margin-top: 5px;
+			}
+			div{
+			justify-self: center;
+			justify-content: center;
+			align-self: center;
+			align-items: center;
+			align-content: center;
+			}
+			.main__estudio--one{
+				grid-area: one;
+			}
+			.main__estudio--two{
+				grid-area: two;
+			}
+			.main__proyecto--three{
+				grid-area: three;
+			}
+			.main__estudio--four{
+				grid-area: four;
+			}
+}
+
+.contacto__formulario{
+	display: flex;
+	flex-direction: column;
+	background-color: black;
+	color: white;
+	width: 100%;
+	padding: 40px;
+}
+
+
+
